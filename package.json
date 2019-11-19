@@ -1,0 +1,32 @@
+{
+  "name": "advokate-base",
+  "version": "1.0.0",
+  "description": "小程序基础项目",
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "commitizen": "^4.0.3",
+    "conventional-changelog-cli": "^2.0.27",
+    "cz-conventional-changelog": "3.0.2",
+    "cz-customizable": "^6.2.0",
+    "husky": "^3.0.9",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.2.0",
+    "eslint-plugin-vue": "^5.2.3"
+  },
+  "scripts": {
+    "commit": "git-cz && yarn changelog",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  }
+}

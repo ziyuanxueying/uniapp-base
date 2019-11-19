@@ -1,0 +1,86 @@
+{
+  "pages": [
+    {
+      "path": "pages/tabbar/tabbar-home",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/tabbar/tabbar-recharge",
+      "style": {
+        "navigationBarTitleText": "充值",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/tabbar/tabbar-me",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/login",
+      "style": {
+        "navigationBarTitleText": "授权登录",
+        "enablePullDownRefresh": true
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "pages2",
+      "pages": [
+        {
+          "path": "other/text",
+          "style": {
+            "navigationBarTitleText": "测试分包"
+          }
+        }
+      ]
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "電競",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "color": "#888888",
+    "selectedColor": "#353535",
+    "list": [
+      {
+        "pagePath": "pages/tabbar/tabbar-home",
+        "iconPath": "static/image/home.png",
+        "selectedIconPath": "static/image/home-sle.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/tabbar/tabbar-recharge",
+        "iconPath": "static/image/recharge.png",
+        "selectedIconPath": "static/image/recharge-sle.png",
+        "text": "充值"
+      },
+      {
+        "pagePath": "pages/tabbar/tabbar-me",
+        "iconPath": "static/image/me.png",
+        "selectedIconPath": "static/image/me-sle.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "condition": {
+    "current": 0,
+    "list": [
+      {
+        "name": "dev_wzc",
+        "path": "pages/tabbar/tabbar-home"
+      }
+    ]
+  }
+}
